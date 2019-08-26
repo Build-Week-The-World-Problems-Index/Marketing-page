@@ -6,12 +6,25 @@
 
 header {
   text-align: center;
+  section {
+    background-color: @bgcolor;
+    height: 60vh;
+    .column();
+    justify-content: space-between;
 
-  h1 {
-    margin: 20px auto;
-  }//close h1
+    h1 {
+        padding: 5vh 0;
+      } //close h1    
 
-  p{
-      
-  }
-}//close header
+    p {
+      font-size: 1.8rem;
+      padding: 5vh 0;
+      max-width: 50%;
+    }
+
+    button{
+        margin-bottom: 5vh;
+    }
+
+  } //close section
+} //close header
