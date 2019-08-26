@@ -181,7 +181,7 @@ header {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 60vh;
+  max-height: 65vh;
   background-color: #E5E5E5;
   display: flex;
   flex-direction: column;
@@ -194,6 +194,7 @@ header img {
   left: 0;
   top: 0;
   width: 100%;
+  min-width: 900px;
   height: auto;
   opacity: 0.2;
 }
@@ -207,6 +208,12 @@ header p {
   max-width: 50%;
   z-index: 2;
 }
+@media (max-width: 500px) {
+  header p {
+    max-width: 85%;
+    text-align: left;
+  }
+}
 header button {
   margin-bottom: 5vh;
   z-index: 2;
@@ -217,21 +224,45 @@ header button {
   align-items: center;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .content div {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .content div {
+    width: 95%;
+    text-align: center;
+  }
 }
 .content div form label {
   color: #585858;
   padding: 0.5vh 0;
 }
+@media (max-width: 500px) {
+  .content div form input {
+    width: 100%;
+  }
+}
 .content div form div {
-  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-items: flex-start;
   padding: 0.5vh 0;
+}
+@media (max-width: 500px) {
+  .content div form div {
+    align-items: center;
+    margin: auto;
+  }
 }
 input[name="question"] {
   width: 100%;
