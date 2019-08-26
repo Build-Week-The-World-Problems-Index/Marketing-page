@@ -5,63 +5,73 @@
 @import "global.less";
 
 header {
+  position:relative;
+  overflow: hidden;
   text-align: center;
-  section {
-    background-color: @bgcolor;
-    height: 60vh;
-    .column();
-    justify-content: space-between;
+  height: 60vh;
+  background-color: @bgcolor;
+  .column();
+  justify-content: space-between;
 
-    h1 {
-        padding: 5vh 0;
-      } //close h1    
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+  }
 
-    p {
-      font-size: 1.8rem;
-      padding: 5vh 0;
-      max-width: 50%;
-    }
+  h1 {
+    padding: 5vh 0;
+    z-index:2;
+  } //close h1
 
-    button{
-        margin-bottom: 5vh;
-    }
+  p {
+    font-size: 1.8rem;
+    padding: 5vh 0;
+    max-width: 50%;
+    z-index:2;
+  }
 
-  } //close section
+  button {
+    margin-bottom: 5vh;
+    z-index:2;
+  }
 } //close header
 
-.content{
-    .flex();
-    padding:2%;
+.content {
+  .flex();
+  padding: 2%;
 
-    div{
-        width:48%;
+  div {
+    width: 48%;
 
-        form{
-
-            label{
-                color:@font-color;
-                padding: .5vh 0;
-            }
-            div{
-                width:25%;
-                .column();
-                align-items:flex-start;
-                padding: .5vh 0;
-            }
-        }
+    form {
+      label {
+        color: @font-color;
+        padding: 0.5vh 0;
+      }
+      div {
+        width: 25%;
+        .column();
+        align-items: flex-start;
+        padding: 0.5vh 0;
+      }
     }
+  }
 }
 
-input[name=question]{
-    width:100%;
-    height: 12vh;
+input[name="question"] {
+  width: 100%;
+  height: 12vh;
 }
 
-.formlabel{
-    text-align:right;
-    padding: 0 2%;
+.formlabel {
+  text-align: right;
+  padding: 0 2%;
 
-    h4{
-        padding: .5vh 0;
-    }
+  h4 {
+    padding: 0.5vh 0;
+  }
 }
