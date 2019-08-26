@@ -34,21 +34,25 @@
       </section>
     </header>
     <section class="content">
-      <div>
-        <h4>Questions</h4>
-        <h4>Comments</h4>
+      <div class="formlabel">
+        <h4>Questions?</h4>
+        <h4>Comments?</h4>
         <h4>Let us know!</h4>
       </div>
       <div>
         <form>
           <div>
-            <p>name:</p>
+            <label for="name">name:</label>
             <input type="text" name="name" />
-            <p>email:</p>
+          </div>
+          <div>
+            <label for="email">email:</label>
             <input type="text" name="email" />
           </div>
-          <p>question/comment:</p>
-          <input type="text" name="comments" />
+          <div class="question">
+            <label for="question">questions/comments:</label><br />
+            <input type="text" name="question" />
+          </div>
         </form>
       </div>
     </section>

@@ -28,3 +28,40 @@ header {
 
   } //close section
 } //close header
+
+.content{
+    .flex();
+    padding:2%;
+
+    div{
+        width:48%;
+
+        form{
+
+            label{
+                color:@font-color;
+                padding: .5vh 0;
+            }
+            div{
+                width:25%;
+                .column();
+                align-items:flex-start;
+                padding: .5vh 0;
+            }
+        }
+    }
+}
+
+input[name=question]{
+    width:100%;
+    height: 12vh;
+}
+
+.formlabel{
+    text-align:right;
+    padding: 0 2%;
+
+    h4{
+        padding: .5vh 0;
+    }
+}
