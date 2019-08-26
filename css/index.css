@@ -181,6 +181,7 @@ header {
   position: relative;
   overflow: hidden;
   text-align: center;
+  height: 60vh;
   max-height: 65vh;
   background-color: #E5E5E5;
   display: flex;
@@ -208,7 +209,7 @@ header p {
   max-width: 50%;
   z-index: 2;
 }
-@media (max-width: 500px) {
+@media (max-width:750px) {
   header p {
     max-width: 85%;
     text-align: left;
@@ -223,8 +224,9 @@ header button {
   justify-content: center;
   align-items: center;
   padding: 2%;
+  height: 40vh;
 }
-@media (max-width: 500px) {
+@media (max-width:750px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -235,7 +237,7 @@ header button {
 .content div {
   width: 48%;
 }
-@media (max-width: 500px) {
+@media (max-width:750px) {
   .content div {
     width: 95%;
     text-align: center;
@@ -245,7 +247,7 @@ header button {
   color: #585858;
   padding: 0.5vh 0;
 }
-@media (max-width: 500px) {
+@media (max-width:750px) {
   .content div form input {
     width: 100%;
   }
@@ -258,7 +260,7 @@ header button {
   align-items: flex-start;
   padding: 0.5vh 0;
 }
-@media (max-width: 500px) {
+@media (max-width:750px) {
   .content div form div {
     align-items: center;
     margin: auto;
