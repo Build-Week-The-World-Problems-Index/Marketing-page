@@ -186,26 +186,6 @@ nav div a {
   padding: 1vh;
   font-size: 1.3rem;
 }
-.slider {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  overflow-x: auto;
-}
-.slide {
-  width: 300px;
-  flex-shrink: 0;
-  height: 100%;
-}
-.slider {
-  scroll-snap-type: x mandatory;
-}
-.slides > div {
-  scroll-snap-align: start;
-}
-.slides > div:target {
-  transform: scale(0.8);
-}
 header {
   position: relative;
   overflow: hidden;
