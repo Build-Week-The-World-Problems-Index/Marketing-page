@@ -126,6 +126,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.body,
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-items: flex-end;
+}
+.navigation,
+.logo {
+  justify-content: flex-start;
+  padding: 10px;
+  margin-right: 20%;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-family: 'Point One', orienta;
+}
+.body,
+.navigation a {
+  text-decoration: none;
+  color: #585858;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-right: 120px;
+  justify-content: space-between;
+}
+a:hover {
+  color: #585858;
+}
+a:active {
+  color: red;
+}
 * {
   max-width: 100%;
   box-sizing: border-box;
@@ -134,10 +164,17 @@ html {
   font-family: 'Orienta', sans-serif;
 }
 button {
-  color: #F8F8F8;
+  border-radius: 20px;
+  font-size: 17px;
+  padding: 5px 70px;
+  text-decoration: none;
   background-color: #585858;
-  border-radius: 8px;
-  padding: 3px 25px;
+  color: #F8F8F8;
+  margin-left: 20px;
+}
+button:hover {
+  background-color: #dfdbdb;
+  color: #585858;
 }
 h1,
 h2,
