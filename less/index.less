@@ -3,6 +3,7 @@
 @import "variables.less";
 @import "navigation.less";
 @import "global.less";
+@import "slideshow.less";
 
 header {
   position:relative;
@@ -46,6 +47,49 @@ header {
     z-index:2;
   }
 } //close header
+
+.about-content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2%;
+  height:60vh;
+  max-height: 65vh;
+  margin: 0 auto;
+  text-align: center;
+    
+    h1 {
+    margin: 0 auto;
+  }
+  
+
+    @media @tablet{
+      .column();
+  }
+
+    div {
+    width: 48%;
+
+    @media @tablet{
+        width:95%;
+        text-align:center;
+    }
+
+    
+      p {
+        .column();
+        align-items: center;
+        padding: 0.5vh 0;
+        text-align: center;
+        @media @tablet{
+            align-items:center;
+            margin:auto;
+        }
+      }
+    }
+  }
+
 
 .content {
   .flex();
