@@ -4,14 +4,135 @@
 @import "navigation.less";
 @import "global.less";
 
+////// HEADER //////
+
 header {
+  position:relative;
+  overflow: hidden;
   text-align: center;
+  height: 65vh;
+  max-height: 65vh;
+  background-color: @bgcolor;
+  .column();
+  justify-content: space-between;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 900px;
+    height: auto;
+    opacity: 0.2;
+  }
 
   h1 {
-    margin: 20px auto;
-  }//close h1
+    padding: 5vh 0;
+    z-index:2;
+  } //close h1
+
+  p {
+    font-size: 1.8rem;
+    padding: 5vh 0;
+    max-width: 50%;
+    z-index:2;
+
+    @media @tablet{
+      font-size: 1.6rem;
+    }
+
+    @media @phone{
+      font-size: 1.3rem;
+    }
+  }
+
+  button {
+    margin-bottom: 5vh;
+    z-index:2;
+  }
+} //close header
+
+////// CONTENT  //////
+
+.main{
+  .flex();
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  @media screen and(max-width:1080px){
+    .column();
+  }
+  #about{
+    width:48%;
+    margin: 50px;
+    .column();
+    align-items:flex-start;
+
+    @media screen and(max-width:1080px){
+      width: 75%;
+    }
+
+    div{
+      .column();
+    }
+
+    h3{
+      width:65%;
+      @media screen and (max-width:1080px){
+        width:100%;
+      }
+    }
+
+    p{
+      width: 65%;
+      margin-bottom:60px;
+      margin-top: 20px;
+      line-height:1.2;
+
+      @media screen and (max-width:1080px){
+        width:100%;
+        text-align:justify;
+      }
+    }
+  }
+}
+
+
+////// SLIDESHOW ///////
+#slideshow { 
+  margin: 50px; 
+  position: relative; 
+  width: 600px; 
+  height: 600px; 
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+
+  h2{
+    font-family: 'Permanent Marker', cursive;
+    text-align:center;
+    color:black;
+  }
 
   p{
-      
+    width:85%;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align:center;
   }
-}//close header
+
+  .slideimg{
+    border: 2px solid black;
+  }
+}
+
+#slideshow > div{
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px;
+}
+
+
+
+
