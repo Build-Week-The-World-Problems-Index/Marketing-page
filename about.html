@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Orienta|Poiret+One&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/about.css" rel="stylesheet" />
-    <title>About</title>
-  </head>
-  <body>
-      <nav class="navigation">
-          <img src="img/Logo.png" class="logo"/>
-          <div>
-            <a href="#">about</a>
-            <a href="#">team</a>
-            <a href="#">contact</a>
-            <a href="#">login</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Orienta|Poiret+One&display=swap" rel="stylesheet" />
+  <link href="css/about.css" rel="stylesheet" />
+  <title>About</title>
+</head>
+
+<body>
+  <nav class="navigation">
+      <a href="index.html"><img src="img/Logo.png" class="logo" /></a>
+    <div>
+      <a href="about.html">about</a>
+      <a href="team.html">team</a>
+      <a href="#" onclick="document.getElementById('formcontent').style.display='block'"
+      >contact</a>
+      <a href="#">login</a>
+    </div>
+  </nav>
+  <header>
+    <img src="img/architectural-design-architecture-buildings-618079.jpg" class="slide-image" />
+    <img src="img/bird-s-eye-view-cold-environment-2832026.jpg" class="slide-image" />
+    <img src="img/earth-lights-world-41949.jpg" class="slide-image" />
+    <h1>About</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nobis totam sed rem maiores ad laboriosam
+      alias deleniti minima ratione tenetur perspiciatis, nesciunt, officia, magni quos quam ipsa fugiat dolorem. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptates facilis iure voluptatem voluptas autem ex
+      soluta sint, saepe eveniet molestias. Sapiente odit neque ipsa repudiandae tempore suscipit optio quaerat? Lorem
+      ipsum dolor sit amet
+    </p>
+    <button>
+      Explore
+    </button>
+  </header>
+  <div class="filler">
+    <div>
+      <h3>Our Mission</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quisquam delectus omnis nobis dolor assumenda
+        dolorum saepe eos, nostrum ad illum ratione, ipsa natus corrupti ducimus architecto provident debitis id.</p>
+    </div>
+    <div>
+      <h3>Future Goals</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quisquam delectus omnis nobis dolor assumenda
+        dolorum saepe eos, nostrum ad illum ratione, ipsa natus corrupti ducimus architecto provident debitis id.</p>
+    </div>
+    <div>
+      <h3>Testimonials</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quisquam delectus omnis nobis dolor assumenda
+        dolorum saepe eos, nostrum ad illum ratione, ipsa natus corrupti ducimus architecto provident debitis id.</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2019 World Problems Index</p>
+  </footer>
+  <section id="formcontent">
+      <div>
+          <span
+          onclick="document.getElementById('formcontent').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <form class="animate">
+          <div class="headercontainer">
+            <h2>Questions?</h2>
+            <h2>Comments?</h2>
           </div>
-        </nav>
-    <header>
-        <h1>About</h1>
-        <section class="about-content">
-          <p>World Problems Index solves the problem of world problems not getting
-              enough attention. This platform will be a way for those problems to
-              get more attention.</p> 
-          <!-- add JS carousel for other p tags <p>
-              Our app solves the problem by providing a way for people to view
-              different problems in the world and contribute to the solutions to
-              those problems.
-          </p>
-          <p>
-              We will facilitate progress in solving difficult social, technical,
-          and global issues that are facing the world.
-          </p> -->
-          <button>
-            Explore
-          </button>
-        </section>
-   </header>
-   <footer>
-      <p>&copy; 2019 World Problems Index</p>
-   </footer>
-  
-  </body>
-  
+          <div class="container">
+            <div>
+              <label for="name">name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="enter name"
+                required
+              />
+              <label for="email">email</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="enter email"
+                required
+              />
+              <label for="question">questions/comments</label>
+              <input type="text" name="question" id="question" required />
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="JavaScript/about.js" type="application/JavaScript"></script>
+  <script src="JavaScript/contact.js" type="application/JavaScript"></script>
+</body>
+
 </html>

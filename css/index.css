@@ -132,7 +132,7 @@ table {
   justify-content: space-between;
   margin-top: 1vh;
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation {
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ table {
     align-items: center;
   }
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation div {
     padding-bottom: 1.2vh;
   }
@@ -152,7 +152,7 @@ table {
   margin-left: 20px;
   font-family: "Point One", orienta;
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation .logo {
     margin: 0 auto;
     padding: 10px;
@@ -164,7 +164,7 @@ table {
   font-size: 2rem;
   margin-right: 1vw;
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation a {
     display: flex;
     flex-direction: column;
@@ -238,102 +238,6 @@ footer {
 footer p {
   padding: 2vh 0;
 }
-header {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  height: 65vh;
-  max-height: 65vh;
-  background-color: #E5E5E5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-header img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  min-width: 900px;
-  height: auto;
-  opacity: 0.2;
-}
-header h1 {
-  padding: 5vh 0;
-  z-index: 2;
-}
-header p {
-  font-size: 1.8rem;
-  padding: 5vh 0;
-  max-width: 50%;
-  z-index: 2;
-}
-@media (max-width:750px) {
-  header p {
-    max-width: 85%;
-    text-align: left;
-  }
-}
-header button {
-  margin-bottom: 5vh;
-  z-index: 2;
-}
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-.main #about {
-  width: 48%;
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-start;
-}
-.main #about h3 {
-  width: 50%;
-}
-.main #about p {
-  width: 50%;
-  margin-bottom: 60px;
-  margin-top: 20px;
-  line-height: 1.2;
-}
-#slideshow {
-  margin: 50px;
-  position: relative;
-  width: 600px;
-  height: 600px;
-  padding: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-#slideshow h2 {
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-  color: black;
-}
-#slideshow p {
-  width: 85%;
-  margin: 0 auto;
-  padding-top: 30px;
-  text-align: center;
-}
-#slideshow .slideimg {
-  border: 2px solid black;
-}
-#slideshow > div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}
 #contactbtn {
   margin: 0;
   margin-top: 30px;
@@ -341,7 +245,7 @@ header button {
 #formcontent {
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
@@ -409,4 +313,100 @@ input {
 }
 #question {
   padding: 5% 2.5%;
+}
+header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: 65vh;
+  max-height: 65vh;
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-width: 900px;
+  height: auto;
+  opacity: 0.2;
+}
+header h1 {
+  padding: 5vh 0;
+  z-index: 2;
+}
+header p {
+  font-size: 1.8rem;
+  padding: 5vh 0;
+  max-width: 50%;
+  z-index: 2;
+}
+@media (max-width:800px) {
+  header p {
+    max-width: 85%;
+    text-align: left;
+  }
+}
+header button {
+  margin-bottom: 5vh;
+  z-index: 2;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.main #about {
+  width: 48%;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.main #about h3 {
+  width: 50%;
+}
+.main #about p {
+  width: 50%;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+#slideshow {
+  margin: 50px;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+#slideshow h2 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: black;
+}
+#slideshow p {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+#slideshow .slideimg {
+  border: 2px solid black;
+}
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
