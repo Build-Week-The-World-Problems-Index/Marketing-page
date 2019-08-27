@@ -267,6 +267,7 @@ header h1 {
   height: 30vh;
   padding: 30px;
   margin: 20px;
+  background: #F8F8F8;
 }
 .container:hover {
   color: red;
