@@ -132,6 +132,7 @@ table {
   justify-content: space-between;
   margin-top: 1vh;
 }
+
 @media (max-width:800px) {
   .navigation {
     display: flex;
@@ -140,7 +141,9 @@ table {
     align-items: center;
   }
 }
+
 @media (max-width:800px) {
+
   .navigation div {
     padding-bottom: 1.2vh;
   }
@@ -152,6 +155,7 @@ table {
   margin-left: 20px;
   font-family: "Point One", orienta;
 }
+
 @media (max-width:800px) {
   .navigation .logo {
     margin: 0 auto;
@@ -164,6 +168,7 @@ table {
   font-size: 2rem;
   margin-right: 1vw;
 }
+
 @media (max-width:800px) {
   .navigation a {
     display: flex;
@@ -208,13 +213,11 @@ h5,
 h6,
 a {
   font-family: 'Poiret One', cursive;
-  color: #585858;
-}
-p {
-  color: #585858;
+
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+
 }
 h2 {
   font-size: 2.5rem;
@@ -231,6 +234,82 @@ h5 {
 h6 {
   font-size: 1.25rem;
 }
+
+header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: 25vh;
+  max-height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  padding: 80vh 33vw;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5%;
+  min-height: 30vh;
+}
+@media (max-width:750px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 30vh;
+  padding: 30px;
+  margin: 20px;
+  background: #F8F8F8;
+}
+.container:hover {
+  color: red;
+}
+.ID {
+  width: 30%;
+  height: 15vh;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+@media (max-width:750px) {
+  width: 95%;
+  text-align: center;
+}
+@media (max-width:750px) {
+  align-items: center;
+  margin: auto;
+}
+.card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-items: flex-end;
+}
+footer p {
+  text-align: center;
+  background: #E5E5E5;
+  height: 8vh;
+  padding: 25px;
+
 footer {
   background-color: #E5E5E5;
   text-align: center;
