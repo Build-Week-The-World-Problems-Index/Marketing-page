@@ -1,41 +1,29 @@
-.body, .navigation {
-  
-    display: flex;
-    width: 100%;
-   
-}
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top:1vh;
 
-.navigation, .logo {
-  
-    justify-content: flex-start;
+  .logo {
     padding: 10px;
     margin-right: 20%;
     margin-top: 5px;
     margin-left: 20px;
-    font-family: 'Point One', orienta;
-  
-}
+    font-family: "Point One", orienta;
+  } //close logo
 
-.body, .navigation a {
-  
+  a {
+    text-decoration: none;
+    color: @font-color;
+    font-size: 2rem;
+    margin-right:1vw;
 
-  text-decoration: none;
-  color: @font-color;
-  font-size: 25px;
-  margin-top:10px;
-  margin-right: 120px;
-  justify-content: space-between;
+    &:hover {
+      text-decoration: underline;
+    }
 
-}
-
-
-a:hover {
-          
-            color: #585858; 
-          
-        }
-        
-        
-a:active {
-	color:red;
-}
+    &:active {
+      color: red;
+    }
+  }
+} //close navigation

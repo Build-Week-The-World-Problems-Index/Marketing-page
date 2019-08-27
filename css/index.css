@@ -126,33 +126,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.body,
 .navigation {
   display: flex;
   width: 100%;
+  justify-content: space-between;
+  margin-top: 1vh;
 }
-.navigation,
-.logo {
-  justify-content: flex-start;
+.navigation .logo {
   padding: 10px;
   margin-right: 20%;
   margin-top: 5px;
   margin-left: 20px;
-  font-family: 'Point One', orienta;
+  font-family: "Point One", orienta;
 }
-.body,
 .navigation a {
   text-decoration: none;
   color: #585858;
-  font-size: 25px;
-  margin-top: 10px;
-  margin-right: 120px;
-  justify-content: space-between;
+  font-size: 2rem;
+  margin-right: 1vw;
 }
-a:hover {
-  color: #585858;
+.navigation a:hover {
+  text-decoration: underline;
 }
-a:active {
+.navigation a:active {
   color: red;
 }
 * {
@@ -213,7 +209,6 @@ footer {
 footer p {
   padding: 2vh 0;
 }
-
 header {
   position: relative;
   overflow: hidden;
