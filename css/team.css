@@ -132,7 +132,7 @@ table {
   justify-content: space-between;
   margin-top: 1vh;
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation {
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ table {
     align-items: center;
   }
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation div {
     padding-bottom: 1.2vh;
   }
@@ -152,7 +152,7 @@ table {
   margin-left: 20px;
   font-family: "Point One", orienta;
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation .logo {
     margin: 0 auto;
     padding: 10px;
@@ -164,7 +164,7 @@ table {
   font-size: 2rem;
   margin-right: 1vw;
 }
-@media (max-width:750px) {
+@media (max-width:800px) {
   .navigation a {
     display: flex;
     flex-direction: column;
