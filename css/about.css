@@ -238,3 +238,66 @@ footer {
 footer p {
   padding: 2vh 0;
 }
+header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: 65vh;
+  max-height: 65vh;
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .slide-image {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-width: 900px;
+  height: auto;
+  opacity: 0.2;
+}
+header .active {
+  display: block;
+}
+header h1 {
+  padding: 5vh 0;
+  z-index: 5;
+}
+header p {
+  font-size: 1.8rem;
+  padding: 5vh 0;
+  max-width: 50%;
+  z-index: 5;
+}
+@media (max-width:750px) {
+  header p {
+    max-width: 85%;
+    text-align: left;
+  }
+}
+header button {
+  margin-bottom: 5vh;
+  z-index: 2;
+}
+.filler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 0;
+}
+.filler div {
+  width: 20%;
+  text-align: center;
+  margin: 0 2vw;
+}
+.filler div h3 {
+  margin-bottom: 2vh;
+}
+.filler div p {
+  line-height: 1.2;
+}
