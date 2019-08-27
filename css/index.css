@@ -280,61 +280,133 @@ header button {
   margin-bottom: 5vh;
   z-index: 2;
 }
-.content {
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2%;
-  min-height: 40vh;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
-@media (max-width:750px) {
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.content div {
+.main #about {
   width: 48%;
-}
-@media (max-width:750px) {
-  .content div {
-    width: 95%;
-    text-align: center;
-  }
-}
-.content div form label {
-  color: #585858;
-  padding: 0.5vh 0;
-}
-@media (max-width:750px) {
-  .content div form input {
-    width: 100%;
-  }
-}
-.content div form div {
+  margin: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-items: flex-start;
-  padding: 0.5vh 0;
 }
-@media (max-width:750px) {
-  .content div form div {
-    align-items: center;
-    margin: auto;
+.main #about h3 {
+  width: 50%;
+}
+.main #about p {
+  width: 50%;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+#slideshow {
+  margin: 50px;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+#slideshow h2 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: black;
+}
+#slideshow p {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+#slideshow .slideimg {
+  border: 2px solid black;
+}
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+#contactbtn {
+  margin: 0;
+  margin-top: 30px;
+}
+#formcontent {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+#formcontent form {
+  padding: 2.5% 2.5% 1% 2.5%;
+  background-color: #fefefe;
+  margin: 5px auto;
+  border: 1px solid #888;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#formcontent form .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
   }
 }
-input[name="question"] {
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+input {
   width: 100%;
-  height: 12vh;
+  margin: 0.25vh 0 1vh;
 }
-.formlabel {
-  text-align: right;
-  padding: 0 2%;
-}
-.formlabel h4 {
-  padding: 0.5vh 0;
+#question {
+  padding: 5% 2.5%;
 }

@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css?family=Orienta|Poiret+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/index.css" rel="stylesheet" />
     <title>World Problems Index</title>
   </head>
@@ -32,25 +36,131 @@
         Explore
       </button>
     </header>
-    <section class="content">
-      <div class="formlabel">
-        <h4>Questions?</h4>
-        <h4>Comments?</h4>
-        <h4>Let us know!</h4>
+    <section class="main">
+      <div id="slideshow">
+        <div>
+          <img src="img/bicycle.jpg" class="slideimg" />
+          <h2>Bicycle Problem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            corporis quasi dolore minus possimus. Quo, assumenda accusamus
+            itaque quasi perferendis, blanditiis magnam commodi consequuntur
+            enim accusantium quam eius neque consequatur! 1 asdfbasldhf
+          </p>
+        </div>
+        <div>
+          <img src="img/city_green.jpg" class="slideimg" />
+          <h2>City Green Problem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            corporis quasi dolore minus possimus. Quo, assumenda accusamus
+            itaque quasi perferendis, blanditiis magnam commodi consequuntur
+            enim accusantium quam eius neque consequatur! 2 dhfbaslfa
+          </p>
+        </div>
+        <div>
+          <img src="img/factory.jpg" class="slideimg" />
+          <h2>Factory Pollution Problem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            corporis quasi dolore minus possimus. Quo, assumenda accusamus
+            itaque quasi perferendis, blanditiis magnam commodi consequuntur
+            enim accusantium quam eius neque consequatur! 3 rqwreliufbsh
+          </p>
+        </div>
+        <div>
+          <img src="img/city_night.jpg" class="slideimg" />
+          <h2>City Night Problem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            corporis quasi dolore minus possimus. Quo, assumenda accusamus
+            itaque quasi perferendis, blanditiis magnam commodi consequuntur
+            enim accusantium quam eius neque consequatur! 4 fasjdfbhbsdfjhbd
+          </p>
+        </div>
+        <div>
+          <img src="img/polar.jpg" class="slideimg" />
+          <h2>Polar Bear Problem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            corporis quasi dolore minus possimus. Quo, assumenda accusamus
+            itaque quasi perferendis, blanditiis magnam commodi consequuntur
+            enim accusantium quam eius neque consequatur! 5 fjdnfnajnfkajfnk
+          </p>
+        </div>
+        <div>
+          <img src="img/wolf.jpg" class="slideimg" />
+          <h2>Wolf Problem</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            corporis quasi dolore minus possimus. Quo, assumenda accusamus
+            itaque quasi perferendis, blanditiis magnam commodi consequuntur
+            enim accusantium quam eius neque consequatur! 6 dsjhfasljkfhaslkfjh
+          </p>
+        </div>
       </div>
+      <div id="about">
+        <h3>Solving World Problems</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil
+          illo vitae asperiores minima pariatur quae reiciendis vero
+          reprehenderit eos praesentium fugiat perferendis expedita soluta
+          debitis nulla, esse labore inventore! Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Enim qui incidunt expedita accusantium
+          doloribus repellat repudiandae! Nostrum, quidem maiores minima
+          voluptates beatae corrupti ex a, suscipit recusandae ab, maxime ullam.
+        </p>
+        <h3>Restoring Faith in Humanity</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+          molestiae, nostrum sed exercitationem eum atque accusamus optio ipsum
+          blanditiis vitae beatae repellendus quis aut minus voluptas! Vel
+          consectetur fugiat accusamus? Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Animi numquam facere dolorum mollitia nesciunt fuga
+          sed iure, suscipit vel maxime esse vitae ad voluptatibus quidem, saepe
+          cumque laudantium ipsam veniam?
+        </p>
+        <button
+          onclick="document.getElementById('formcontent').style.display='block'"
+          id="contactbtn"
+        >
+          Contact
+        </button>
+      </div>
+    </section>
+    <section id="formcontent">
       <div>
-        <form>
-          <div>
-            <label for="name">name:</label>
-            <input type="text" name="name" />
+          <span
+          onclick="document.getElementById('formcontent').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <form class="animate">
+          <div class="headercontainer">
+            <h2>Questions?</h2>
+            <h2>Comments?</h2>
           </div>
-          <div>
-            <label for="email">email:</label>
-            <input type="text" name="email" />
-          </div>
-          <div class="question">
-            <label for="question">questions/comments:</label><br />
-            <input type="text" name="question" />
+          <div class="container">
+            <div>
+              <label for="name">name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="enter name"
+                required
+              />
+              <label for="email">email</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="enter email"
+                required
+              />
+              <label for="question">questions/comments</label>
+              <input type="text" name="question" id="question" required />
+            </div>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
@@ -58,5 +168,11 @@
     <footer>
       <p>&copy; 2019 World Problems Index</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="JavaScript/slideshow.js"
+      type="application/JavaScript"
+    ></script>
+    <script src="JavaScript/contact.js" type="application/JavaScript"></script>
   </body>
 </html>
