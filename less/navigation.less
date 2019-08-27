@@ -4,12 +4,27 @@
   justify-content: space-between;
   margin-top:1vh;
 
+  @media @tablet{
+      .column();
+  }
+
+  div{
+      @media @tablet{
+          padding-bottom:1.2vh;
+      }
+  }
+
   .logo {
     padding: 10px;
     margin-right: 20%;
     margin-top: 5px;
     margin-left: 20px;
     font-family: "Point One", orienta;
+
+    @media @tablet{
+        margin: 0 auto;
+        padding: 10px;
+    }
   } //close logo
 
   a {
@@ -17,6 +32,12 @@
     color: @font-color;
     font-size: 2rem;
     margin-right:1vw;
+
+    @media @tablet{
+        .column();
+        margin: 0 auto;
+        padding-bottom: .5vh;
+    }
 
     &:hover {
       text-decoration: underline;

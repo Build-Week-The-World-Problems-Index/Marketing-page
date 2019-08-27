@@ -132,6 +132,19 @@ table {
   justify-content: space-between;
   margin-top: 1vh;
 }
+@media (max-width:750px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width:750px) {
+  .navigation div {
+    padding-bottom: 1.2vh;
+  }
+}
 .navigation .logo {
   padding: 10px;
   margin-right: 20%;
@@ -139,11 +152,27 @@ table {
   margin-left: 20px;
   font-family: "Point One", orienta;
 }
+@media (max-width:750px) {
+  .navigation .logo {
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
 .navigation a {
   text-decoration: none;
   color: #585858;
   font-size: 2rem;
   margin-right: 1vw;
+}
+@media (max-width:750px) {
+  .navigation a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 0.5vh;
+  }
 }
 .navigation a:hover {
   text-decoration: underline;
@@ -213,7 +242,7 @@ header {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 60vh;
+  height: 65vh;
   max-height: 65vh;
   background-color: #E5E5E5;
   display: flex;
@@ -256,7 +285,7 @@ header button {
   justify-content: center;
   align-items: center;
   padding: 2%;
-  height: 40vh;
+  min-height: 40vh;
 }
 @media (max-width:750px) {
   .content {
