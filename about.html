@@ -12,11 +12,12 @@
 
 <body>
   <nav class="navigation">
-    <img src="img/Logo.png" class="logo" />
+      <a href="index.html"><img src="img/Logo.png" class="logo" /></a>
     <div>
-      <a href="#">about</a>
-      <a href="#">team</a>
-      <a href="#">contact</a>
+      <a href="about.html">about</a>
+      <a href="team.html">team</a>
+      <a href="#" onclick="document.getElementById('formcontent').style.display='block'"
+      >contact</a>
       <a href="#">login</a>
     </div>
   </nav>
@@ -55,8 +56,46 @@
   <footer>
     <p>&copy; 2019 World Problems Index</p>
   </footer>
+  <section id="formcontent">
+      <div>
+          <span
+          onclick="document.getElementById('formcontent').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <form class="animate">
+          <div class="headercontainer">
+            <h2>Questions?</h2>
+            <h2>Comments?</h2>
+          </div>
+          <div class="container">
+            <div>
+              <label for="name">name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="enter name"
+                required
+              />
+              <label for="email">email</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="enter email"
+                required
+              />
+              <label for="question">questions/comments</label>
+              <input type="text" name="question" id="question" required />
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="JavaScript/about.js" type="application/JavaScript"></script>
+  <script src="JavaScript/contact.js" type="application/JavaScript"></script>
 </body>
 
 </html>
