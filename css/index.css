@@ -183,9 +183,13 @@ h5,
 h6,
 a {
   font-family: 'Poiret One', cursive;
+  color: #585858;
+}
+p {
+  color: #585858;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -202,9 +206,111 @@ h5 {
 h6 {
   font-size: 1.25rem;
 }
-header {
+footer {
+  background-color: #E5E5E5;
   text-align: center;
 }
+footer p {
+  padding: 2vh 0;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: 60vh;
+  max-height: 65vh;
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-width: 900px;
+  height: auto;
+  opacity: 0.2;
+}
 header h1 {
-  margin: 20px auto;
+  padding: 5vh 0;
+  z-index: 2;
+}
+header p {
+  font-size: 1.8rem;
+  padding: 5vh 0;
+  max-width: 50%;
+  z-index: 2;
+}
+@media (max-width:750px) {
+  header p {
+    max-width: 85%;
+    text-align: left;
+  }
+}
+header button {
+  margin-bottom: 5vh;
+  z-index: 2;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  height: 40vh;
+}
+@media (max-width:750px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.content div {
+  width: 48%;
+}
+@media (max-width:750px) {
+  .content div {
+    width: 95%;
+    text-align: center;
+  }
+}
+.content div form label {
+  color: #585858;
+  padding: 0.5vh 0;
+}
+@media (max-width:750px) {
+  .content div form input {
+    width: 100%;
+  }
+}
+.content div form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  padding: 0.5vh 0;
+}
+@media (max-width:750px) {
+  .content div form div {
+    align-items: center;
+    margin: auto;
+  }
+}
+input[name="question"] {
+  width: 100%;
+  height: 12vh;
+}
+.formlabel {
+  text-align: right;
+  padding: 0 2%;
+}
+.formlabel h4 {
+  padding: 0.5vh 0;
 }
