@@ -280,13 +280,52 @@ header button {
   margin-bottom: 5vh;
   z-index: 2;
 }
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.main #about {
+  width: 48%;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.main #about h3 {
+  width: 50%;
+}
+.main #about p {
+  width: 50%;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
 #slideshow {
-  margin: 50px auto;
+  margin: 50px;
   position: relative;
-  width: 240px;
-  height: 240px;
+  width: 600px;
+  height: 600px;
   padding: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+#slideshow h2 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: black;
+}
+#slideshow p {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+#slideshow .slideimg {
+  border: 2px solid black;
 }
 #slideshow > div {
   position: absolute;
