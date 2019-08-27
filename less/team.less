@@ -3,3 +3,97 @@
 @import "variables.less";
 @import "navigation.less";
 @import "global.less";
+
+header {
+  position:relative;
+  overflow: hidden;
+  text-align: center;
+  height: 25vh;
+  max-height: 65vh;
+      .column();
+  justify-content: space-between;
+
+
+  h1 {
+    padding: 80vh 33vw;
+ 
+  }
+  
+}
+
+.content {
+
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  padding: 5%;
+  min-height:30vh;
+
+  @media @tablet{
+      .column();
+  }
+  
+  @media @phone{
+        
+       .column(); 
+  }
+}
+  
+.container{
+      
+      display: flex;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 40%;
+      height: 30vh;
+      padding:30px;
+      margin:20px;
+      
+      
+            &:hover{
+                  
+                 color: red; 
+                  
+                  
+            }
+}
+
+      .ID {
+            
+            width:30%;
+            height: 15vh;
+            border-radius: 50%;
+            margin-bottom:15px;
+            
+            
+      }
+
+    @media @tablet{
+        width:95%;
+        text-align:center;
+}
+
+
+        @media @tablet{
+            align-items:center;
+            margin:auto;
+        }
+
+.card {
+     
+      
+      width: auto;
+      display:flex;
+      flex-direction: column;
+      padding: 5px;
+      justify-items: flex-end;
+}
+
+footer p {
+      
+      text-align: center;
+      background: @bgcolor;
+      height: 8vh;
+      padding: 25px;
+      
+}
