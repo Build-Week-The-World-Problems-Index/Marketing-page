@@ -38,8 +38,11 @@ header {
     z-index:2;
 
     @media @tablet{
-        max-width:85%;
-        text-align:left;
+      font-size: 1.6rem;
+    }
+
+    @media @phone{
+      font-size: 1.3rem;
     }
   }
 
@@ -55,24 +58,45 @@ header {
   .flex();
   justify-content: flex-end;
   align-items: flex-start;
+
+  @media screen and(max-width:1080px){
+    .column();
+  }
   #about{
     width:48%;
     margin: 50px;
     .column();
     align-items:flex-start;
 
+    @media screen and(max-width:1080px){
+      width: 75%;
+    }
+
+    div{
+      .column();
+    }
+
     h3{
-      width:50%;
+      width:65%;
+      @media screen and (max-width:1080px){
+        width:100%;
+      }
     }
 
     p{
-      width: 50%;
+      width: 65%;
       margin-bottom:60px;
       margin-top: 20px;
       line-height:1.2;
+
+      @media screen and (max-width:1080px){
+        width:100%;
+        text-align:justify;
+      }
     }
   }
 }
+
 
 ////// SLIDESHOW ///////
 #slideshow { 
@@ -110,5 +134,5 @@ header {
 }
 
 
-/////// FORM ///////
+
 
