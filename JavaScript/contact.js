@@ -1,6 +1,7 @@
-$(document).ready(function formclick(){
-    let form = document.getElementsByTagName("form")
-    document.getElementsByClassName(".formlabel").onclick = function(){
-        form.style.display="block"
-    }
-})
+var modal = document.getElementById('formcontent');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

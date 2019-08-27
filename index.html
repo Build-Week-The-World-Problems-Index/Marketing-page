@@ -120,27 +120,47 @@
           sed iure, suscipit vel maxime esse vitae ad voluptatibus quidem, saepe
           cumque laudantium ipsam veniam?
         </p>
+        <button
+          onclick="document.getElementById('formcontent').style.display='block'"
+          id="contactbtn"
+        >
+          Contact
+        </button>
       </div>
     </section>
-    <section class="formcontent">
-      <div class="formlabel" onclick="formclick()">
-        <h4>Questions?</h4>
-        <h4>Comments?</h4>
-        <h4>Let us know!</h4>
-      </div>
+    <section id="formcontent">
       <div>
-        <form>
-          <div>
-            <label for="name">name:</label>
-            <input type="text" name="name" />
+          <span
+          onclick="document.getElementById('formcontent').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <form class="animate">
+          <div class="headercontainer">
+            <h2>Questions?</h2>
+            <h2>Comments?</h2>
           </div>
-          <div>
-            <label for="email">email:</label>
-            <input type="text" name="email" />
-          </div>
-          <div class="question">
-            <label for="question">questions/comments:</label><br />
-            <input type="text" name="question" />
+          <div class="container">
+            <div>
+              <label for="name">name</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="enter name"
+                required
+              />
+              <label for="email">email</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="enter email"
+                required
+              />
+              <label for="question">questions/comments</label>
+              <input type="text" name="question" id="question" required />
+            </div>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
