@@ -3,3 +3,59 @@
 @import "variables.less";
 @import "navigation.less";
 @import "global.less";
+
+header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 65vh;
+    max-height: 65vh;
+    background-color: @bgcolor;
+    .column();
+    justify-content: space-between;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-width: 900px;
+        height: auto;
+        opacity: 0.2;
+    }
+
+    h1 {
+        padding: 5vh 0;
+        z-index: 2;
+    }
+
+    //close h1
+    div {
+        max-width: 50%;
+        margin: 0 auto;
+
+        p {
+            font-size: 1.8rem;
+            padding: 5vh 0;
+            max-width: 50%;
+            z-index: 2;
+
+            @media @tablet {
+                max-width: 85%;
+                text-align: left;
+            }
+        }
+    }
+
+
+    button {
+        margin-bottom: 5vh;
+        z-index: 2;
+    }
+}
+
+//close header
+
+///// Slideshow /////
+
+
