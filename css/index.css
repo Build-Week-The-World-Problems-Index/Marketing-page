@@ -130,7 +130,6 @@ table {
 .navigation {
   display: flex;
   width: 100%;
-  justify-items: flex-end;
 }
 .navigation,
 .logo {
