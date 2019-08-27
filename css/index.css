@@ -177,15 +177,7 @@ footer {
 footer p {
   padding: 2vh 0;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 2vh;
-}
-nav div a {
-  padding: 1vh;
-  font-size: 1.3rem;
-}
+
 header {
   position: relative;
   overflow: hidden;
@@ -227,51 +219,6 @@ header p {
 header button {
   margin-bottom: 5vh;
   z-index: 2;
-}
-.about-content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 2%;
-  height: 60vh;
-  max-height: 65vh;
-  margin: 0 auto;
-  text-align: center;
-}
-.about-content h1 {
-  margin: 0 auto;
-}
-@media (max-width:750px) {
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.about-content div {
-  width: 48%;
-}
-@media (max-width:750px) {
-  .about-content div {
-    width: 95%;
-    text-align: center;
-  }
-}
-.about-content div p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5vh 0;
-  text-align: center;
-}
-@media (max-width:750px) {
-  .about-content div p {
-    align-items: center;
-    margin: auto;
-  }
 }
 .content {
   display: flex;
