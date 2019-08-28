@@ -139,16 +139,21 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding-bottom: 6vh;
   }
 }
 
-@media (max-width:800px) {
+@media (max-width: 510px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding-bottom: 8vh;
 
-  .navigation div {
-    padding-bottom: 1.2vh;
   }
 }
-.navigation .logo {
+.logo {
   padding: 10px;
   margin-right: 20%;
   margin-top: 5px;
@@ -156,33 +161,24 @@ table {
   font-family: "Point One", orienta;
 }
 
-@media (max-width:800px) {
-  .navigation .logo {
-    margin: 0 auto;
+@media (max-width:750px) {
+  .logo {
+    margin: auto 0;
+
     padding: 10px;
   }
 }
-.navigation a {
+a {
   text-decoration: none;
   color: #585858;
   font-size: 2rem;
   margin-right: 1vw;
+  padding-top: 4vh;
 }
-
-@media (max-width:800px) {
-  .navigation a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding-bottom: 0.5vh;
-  }
-}
-.navigation a:hover {
+a:hover {
   text-decoration: underline;
 }
-.navigation a:active {
+a:active {
   color: red;
 }
 * {
@@ -193,17 +189,29 @@ html {
   font-family: 'Orienta', sans-serif;
 }
 button {
+  display: flex;
   border-radius: 20px;
   font-size: 17px;
   padding: 5px 70px;
   text-decoration: none;
   background-color: #585858;
   color: #F8F8F8;
-  margin-left: 20px;
+  margin-left: 40vw;
+  margin-bottom: 20px;
 }
 button:hover {
   background-color: #dfdbdb;
   color: #585858;
+}
+@media (max-width:750px) {
+  button {
+    margin-left: 35vw;
+  }
+}
+@media (max-width: 510px) {
+  button {
+    margin-left: 30vw;
+  }
 }
 h1,
 h2,
@@ -248,6 +256,7 @@ header {
 }
 header h1 {
   padding: 80vh 33vw;
+  color: #585858;
 }
 .content {
   display: flex;
@@ -264,45 +273,50 @@ header h1 {
     align-items: center;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .content {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.container {
-  display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 40%;
-  height: 30vh;
-  padding: 30px;
-  margin: 20px;
-  background: #F8F8F8;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 40px;
 }
-.container:hover {
-  color: red;
-}
-.ID {
-  width: 30%;
-  height: 15vh;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-@media (max-width:750px) {
-  width: 95%;
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-@media (max-width:750px) {
-  align-items: center;
-  margin: auto;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
-.card {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  justify-items: flex-end;
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #F8F8F8;
+  color: black;
+}
+.flip-card-back {
+  background-color: #F8F8F8;
+  color: #585858;
+  transform: rotateY(180deg);
+}
+h1 {
+  padding: 10%;
 }
 footer p {
   text-align: center;
