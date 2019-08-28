@@ -8,7 +8,7 @@ setInterval(function() {
     .fadeIn(1000)
     .end()
     .appendTo('#slideshow');
-},  12000);
+},  15000);
 
 
 console.log("Hello, I am working")

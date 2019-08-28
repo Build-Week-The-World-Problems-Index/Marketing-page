@@ -146,13 +146,11 @@ table {
 
 
 @media (max-width: 510px) {
-
   .navigation {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
     padding-bottom: 8vh;
-
   }
 }
 .logo {
@@ -177,7 +175,18 @@ a {
   margin-right: 1vw;
   padding-top: 4vh;
 }
-a:hover {
+
+@media (max-width:800px) {
+  .navigation a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 0.5vh;
+  }
+}
+.navigation a:hover {
   text-decoration: underline;
 }
 a:active {
@@ -215,13 +224,10 @@ h5,
 h6,
 a {
   font-family: 'Poiret One', cursive;
-
-
 }
+
 h1 {
   font-size: 3rem;
-
-
 }
 h2 {
   font-size: 2.5rem;
@@ -250,10 +256,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-header h1 {
-  padding: 80vh 33vw;
-  color: #585858;
-}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -269,13 +272,16 @@ header h1 {
     align-items: center;
   }
 }
-@media (max-width: 510px) {
+
+@media (max-width: 500px) {
+
   .content {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -313,14 +319,14 @@ header h1 {
 }
 h1 {
   padding: 10%;
+
 }
 footer p {
   text-align: center;
   background: #E5E5E5;
   height: 8vh;
   padding: 25px;
-
-
+  
 footer {
   background-color: #E5E5E5;
   text-align: center;
