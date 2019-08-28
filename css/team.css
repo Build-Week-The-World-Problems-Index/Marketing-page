@@ -132,6 +132,9 @@ table {
   justify-content: space-between;
   margin-top: 1vh;
 }
+.navigation div {
+  padding-top: 1vh;
+}
 @media (max-width:800px) {
   .navigation {
     display: flex;
@@ -168,7 +171,7 @@ a {
   color: #585858;
   font-size: 2rem;
   margin-right: 1vw;
-  padding-top: 4vh;
+  padding-top: 0vh;
 }
 a:hover {
   text-decoration: underline;
