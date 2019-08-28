@@ -2,56 +2,59 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top:1vh;
-  
 
-   @media @tablet {
-        .column();
-        margin: 0 auto;
-        padding-bottom: 6vh;
-    }
-    
-    @media @phone {
-        display:flex;
-        flex-direction: column;
-        margin: 20px auto;
-        padding-bottom: 8vh;
-        
-    }
-} 
+  margin-top: 1vh;
 
-  .logo {
-    padding: 10px;
-    margin-right: 20%;
-    margin-top: 5px;
-    margin-left: 20px;
-    font-family: "Point One", orienta;
 
-    @media @tablet{
-        margin: auto 0;
-        padding: 10px;
-    }
-    
-    
-  } //close logo
+  @media @tablet {
+    .column();
+    margin: 0 auto;
+    padding-bottom: 6vh;
+  }
 
-    a {
-    text-decoration: none;
-    color: @font-color;
-    font-size: 2rem;
-    margin-right:1vw;
-    padding-top: 4vh;
-  
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:active {
-      color: red;
-    }
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding-bottom: 8vh;
 
   }
-} //close navigation
+}
 
+.logo {
+  padding: 10px;
+  margin-right: 20%;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-family: "Point One", orienta;
+
+  @media @tablet {
+    margin: auto 0;
+    padding: 10px;
+  }
+
+
+}
+
+//close logo
+
+a {
+  text-decoration: none;
+  color: @font-color;
+  font-size: 2rem;
+  margin-right: 1vw;
+  padding-top: 4vh;
+
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: red;
+  }
+
+}
+
+/// close header
 

@@ -144,7 +144,9 @@ table {
   }
 }
 
+
 @media (max-width: 510px) {
+
   .navigation {
     display: flex;
     flex-direction: column;
@@ -161,7 +163,7 @@ table {
   font-family: "Point One", orienta;
 }
 
-@media (max-width:750px) {
+@media (max-width:800px) {
   .logo {
     margin: auto 0;
 
@@ -196,23 +198,15 @@ button {
   text-decoration: none;
   background-color: #585858;
   color: #F8F8F8;
-  margin-left: 40vw;
-  margin-bottom: 20px;
+
+  margin: 20px auto;
+
 }
 button:hover {
   background-color: #dfdbdb;
   color: #585858;
 }
-@media (max-width:750px) {
-  button {
-    margin-left: 35vw;
-  }
-}
-@media (max-width: 510px) {
-  button {
-    margin-left: 30vw;
-  }
-}
+
 h1,
 h2,
 h3,
@@ -222,9 +216,11 @@ h6,
 a {
   font-family: 'Poiret One', cursive;
 
+
 }
 h1 {
   font-size: 3rem;
+
 
 }
 h2 {
@@ -324,6 +320,7 @@ footer p {
   height: 8vh;
   padding: 25px;
 
+
 footer {
   background-color: #E5E5E5;
   text-align: center;
@@ -407,3 +404,100 @@ input {
 #question {
   padding: 5% 2.5%;
 }
+
+header {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: 10vh;
+  max-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: #585858;
+}
+.content {
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5%;
+  min-height: 30vh;
+}
+@media (max-width:800px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 40px;
+}
+.flip-card a {
+  font-family: 'Orienta', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #F8F8F8;
+  color: black;
+  cursor: pointer;
+}
+.flip-card-back {
+  background-color: #F8F8F8;
+  color: #585858;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+footer p {
+  text-align: center;
+  background: #E5E5E5;
+  height: 8vh;
+  padding: 25px;
+}
+

@@ -5,38 +5,40 @@
 @import "global.less";
 
 header {
-  position:relative;
+
+  position: relative;
   overflow: hidden;
   text-align: center;
-  height: 25vh;
+  height: 10vh;
   max-height: 65vh;
-      .column();
+  .column();
+
   justify-content: space-between;
 
 
   h1 {
-    padding: 80vh 33vw;
-    color:@font-color;
- 
+    color: @font-color;
   }
 }
 
 .content {
 
-  display:flex;
+  background-color: @contentbg;
+  display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 5%;
-  min-height:30vh;
+  min-height: 30vh;
 
-  @media @tablet{
-      .column();
+  @media @tablet {
+    .column();
   }
-  
-  @media @phone{
-        
-       .column(); 
+
+  @media @phone {
+
+    .column();
+
   }
 }
 
@@ -48,6 +50,15 @@ header {
   perspective: 1000px;
   margin: 40px;
 
+
+  a {
+    font-family: 'Orienta', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+
 }
 
 .flip-card-inner {
@@ -57,12 +68,15 @@ header {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -74,12 +88,31 @@ header {
 .flip-card-front {
   background-color: @contentbg;
   color: black;
+
+  cursor: pointer;
+
 }
 
 .flip-card-back {
   background-color: @contentbg;
   color: @font-color;
   transform: rotateY(180deg);
+  cursor: pointer;
+  text-align: center;
+  .column();
+  justify-content: space-around;
+}
+
+
+
+footer p {
+
+  text-align: center;
+  background: @bgcolor;
+  height: 8vh;
+  padding: 25px;
+
+
 }
 
 h1 { 
@@ -94,5 +127,5 @@ footer p {
       background: @bgcolor;
       height: 8vh;
       padding: 25px;
-      
+
 }
