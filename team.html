@@ -1,102 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Orienta|Poiret+One&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/index.css" rel="stylesheet" />
-    <title>Team</title>
-  </head>
-  <body>
-      <nav>
-          <img src="img/Logo.png" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Orienta|Poiret+One&display=swap" rel="stylesheet" />
+  <link href="css/team.css" rel="stylesheet" />
+  <title>Team</title>
+</head>
+
+<body>
+  <nav class="navigation">
+    <a href="index.html"><img src="img/Logo.png" class="logo" /></a>
+    <div>
+      <a href="about.html">about</a>
+      <a href="team.html">team</a>
+      <a href="#" onclick="document.getElementById('formcontent').style.display='block'">contact</a>
+      <a href="#">login</a>
+    </div>
+  </nav>
+  <header>
+    <h1>Meet the Team</h1>
+  </header>
+  <section class="content">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/Christopher.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <a href="https://github.com/ChrisRDaniels"><div class="flip-card-back">
+          <h1>Chistopher Daniels</h1>
+          <p>Software Engineer</p><br>
+          <p>WEB UI DEVELOPER</p>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="https://github.com/Tyler668"><img src="img/Tyler.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Tyler Gilchrist</h1>
+          <p>Software Engineer</p><br>
+          <p>REACT DEVELOPER</p>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="https://github.com/Kristinbarr"><img src="img/Kristin.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Kristin<br>Barr</h1>
+          <p>Software Engineer</p><br>
+          <p>REACT DEVELOPER</p>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="https://github.com/Robdowski"><img src="img/Robert.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Robert Carter</h1>
+          <p>Software Engineer</p><br>
+          <p>WEB UI DEVELOPER</p>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="https://github.com/codeOfTheFuture"><img src="img/Jeff.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Jeff<br>Oliver</h1>
+          <p>Software Engineer</p><br>
+          <p>PROJECT MANAGER/BACKEND DEVELOPER</p>
+        </div></a>>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="https://github.com/elyssiawid"><img src="img/Elyssia.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Elyssia Widjaja</h1>
+          <p>Software Engineer</p><br>
+          <p>REACT DEVELOPER</p>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="https://github.com/IamGomez"><img src="img/Luis.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Luis<br>Gomez</h1>
+          <p>Software Developer</p><br>
+          <p>WEB UI DEVELOPER</p>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="https://github.com/danfrrr13"><img src="img/Daniel.png" alt="Avatar" class="Photo" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Daniel<br>Ferrer</h1>
+          <p>FRONTEND DEVELOPER</p><br>
+          <p>REACT DEVELOPER</p>
+        </div>
+      </div></a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2019 World Problems Index</p>
+  </footer>
+  <section id="formcontent">
+    <div>
+      <span onclick="document.getElementById('formcontent').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+      <form class="animate">
+        <div class="headercontainer">
+          <h2>Questions?</h2>
+          <h2>Comments?</h2>
+        </div>
+        <div class="container">
           <div>
-            <a href="#">about</a>
-            <a href="#">team</a>
-            <a href="#">contact</a>
-            <a href="#">login</a>
+            <label for="name">name</label>
+            <input type="text" name="name" placeholder="enter name" required />
+            <label for="email">email</label>
+            <input type="text" name="email" placeholder="enter email" required />
+            <label for="question">questions/comments</label>
+            <input type="text" name="question" id="question" required />
           </div>
-        </nav>
-    <header>
-      <h1>Meet the Team</h1>
-    </header>
-    <section class="content">
-      <div>
-        <img src="#" />
-        <h5>Joe Schmoe</h5>
-        <h6>Software Engineer</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam iusto
-          laudantium quis officia deleniti placeat cum facere temporibus debitis
-          libero et molestias necessitatibus illo sapiente beatae eius, a aut
-          doloremque.
-        </p>
-      </div>
-      <div>
-        <img src="#" />
-        <h5>Joe Schmoe</h5>
-        <h6>Software Engineer</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam iusto
-          laudantium quis officia deleniti placeat cum facere temporibus debitis
-          libero et molestias necessitatibus illo sapiente beatae eius, a aut
-          doloremque.
-        </p>
-      </div>
-      <div>
-        <img src="#" />
-        <h5>Joe Schmoe</h5>
-        <h6>Software Engineer</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam iusto
-          laudantium quis officia deleniti placeat cum facere temporibus debitis
-          libero et molestias necessitatibus illo sapiente beatae eius, a aut
-          doloremque.
-        </p>
-      </div>
-      <div>
-        <img src="#" />
-        <h5>Joe Schmoe</h5>
-        <h6>Software Engineer</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam iusto
-          laudantium quis officia deleniti placeat cum facere temporibus debitis
-          libero et molestias necessitatibus illo sapiente beatae eius, a aut
-          doloremque.
-        </p>
-      </div>
-      <div>
-        <img src="#" />
-        <h5>Joe Schmoe</h5>
-        <h6>Software Engineer</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam iusto
-          laudantium quis officia deleniti placeat cum facere temporibus debitis
-          libero et molestias necessitatibus illo sapiente beatae eius, a aut
-          doloremque.
-        </p>
-      </div>
-      <div>
-        <img src="#" />
-        <h5>Joe Schmoe</h5>
-        <h6>Software Engineer</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam iusto
-          laudantium quis officia deleniti placeat cum facere temporibus debitis
-          libero et molestias necessitatibus illo sapiente beatae eius, a aut
-          doloremque.
-        </p>
-      </div>
-    </section>
-    <button>
-      Explore
-    </button>
-    <footer>
-      <p>&copy; 2019 World Problems Index</p>
-    </footer>
-  </body>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="JavaScript/contact.js" type="application/JavaScript"></script>
+</body>
+
 </html>

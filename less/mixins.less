@@ -1,20 +1,36 @@
-.flex(){
-    display:flex;
+.flex() {
+    display: flex;
     justify-content: center;
-    align-items:center;
-}
-
-.column(){
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
     align-items: center;
 }
 
-.button(){
-    color:@button-font-color;
-    background-color:@buttonbg;
-    border-radius:8px;
-    padding: 3px 25px;
+.column() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.button () {
+
+
+
+    display: flex;
+    border-radius: 20px;
+    font-size: 17px;
+    padding: 5px 70px;
+    text-decoration: none;
+    background-color: @buttonbg;
+    color: @button-font-color;
+    margin: 20px auto;
+
+    &:hover {
+
+        background-color: rgb(223, 219, 219);
+        color: #585858;
+
+
+    }
+
+
+}
