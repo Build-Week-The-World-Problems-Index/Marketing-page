@@ -188,6 +188,7 @@ button {
   font-size: 17px;
   padding: 5px 70px;
   text-decoration: none;
+  background-color: #585858;
   color: #F8F8F8;
   margin-left: 20px;
 }
@@ -262,6 +263,16 @@ footer p {
   justify-content: center;
   align-items: center;
 }
+@media (max-width:800px) {
+  #formcontent form {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  #formcontent form {
+    width: 80%;
+  }
+}
 #formcontent form .container {
   display: flex;
   flex-direction: column;
@@ -313,8 +324,8 @@ header {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 10vh;
-  max-height: 65vh;
+  height: 15vh;
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -397,15 +408,6 @@ header h1 {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-}
-footer p {
-  text-align: center;
-  background: #E5E5E5;
-  height: 8vh;
-  padding: 25px;
-}
-h1 {
-  padding: 10%;
 }
 footer p {
   text-align: center;
