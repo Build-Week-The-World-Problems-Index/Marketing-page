@@ -315,7 +315,7 @@ header {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 25vh;
+  height: 10vh;
   max-height: 65vh;
   display: flex;
   flex-direction: column;
@@ -394,6 +394,11 @@ header h1 {
   transform: rotateY(180deg);
   cursor: pointer;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 footer p {
   text-align: center;
