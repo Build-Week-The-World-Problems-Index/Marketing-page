@@ -306,6 +306,9 @@ header h1 {
   color: #585858;
   transform: rotateY(180deg);
 }
+h1 {
+  padding: 10%;
+}
 footer p {
   text-align: center;
   background: #E5E5E5;
