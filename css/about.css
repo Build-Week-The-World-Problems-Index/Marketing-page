@@ -132,6 +132,9 @@ table {
   justify-content: space-between;
   margin-top: 1vh;
 }
+.navigation div {
+  padding-top: 1vh;
+}
 @media (max-width:800px) {
   .navigation {
     display: flex;
@@ -168,7 +171,9 @@ a {
   color: #585858;
   font-size: 2rem;
   margin-right: 1vw;
+
   padding-top: 4vh;
+
 }
 a:hover {
   text-decoration: underline;
@@ -184,13 +189,14 @@ html {
   font-family: 'Orienta', sans-serif;
 }
 button {
+  display: flex;
   border-radius: 20px;
   font-size: 17px;
   padding: 5px 70px;
   text-decoration: none;
   background-color: #585858;
   color: #F8F8F8;
-  margin-left: 20px;
+  margin: 20px auto;
 }
 button:hover {
   background-color: #dfdbdb;
