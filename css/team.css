@@ -501,6 +501,7 @@ button {
   margin-left: 20px;
   border: none;
 }
+
 button:hover {
   background-color: #dfdbdb;
   color: #585858;
