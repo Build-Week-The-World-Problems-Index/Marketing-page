@@ -187,14 +187,14 @@ html {
   font-family: 'Orienta', sans-serif;
 }
 button {
-  display: flex;
   border-radius: 20px;
   font-size: 17px;
   padding: 5px 70px;
   text-decoration: none;
   background-color: #585858;
   color: #F8F8F8;
-  margin: 20px auto;
+  margin-left: 20px;
+  border: none;
 }
 button:hover {
   background-color: #dfdbdb;
@@ -266,6 +266,16 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:800px) {
+  #formcontent form {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  #formcontent form {
+    width: 80%;
+  }
 }
 #formcontent form .container {
   display: flex;
@@ -357,9 +367,16 @@ header p {
     font-size: 1.2rem;
   }
 }
-header button {
-  margin-bottom: 5vh;
+header a {
   z-index: 2;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+header a button {
+  margin-bottom: 3vh;
+  z-index: 2;
+  cursor: pointer;
 }
 .filler {
   display: flex;
