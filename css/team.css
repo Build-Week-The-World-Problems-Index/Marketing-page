@@ -500,8 +500,8 @@ button {
   color: #F8F8F8;
   margin-left: 20px;
   border: none;
+  cursor: pointer;
 }
-
 button:hover {
   background-color: #dfdbdb;
   color: #585858;
@@ -725,4 +725,9 @@ footer p {
   background: #E5E5E5;
   height: 8vh;
   padding: 25px;
+}
+i {
+  position: absolute;
+  opacity: 0.12;
+  font-size: 300px;
 }
