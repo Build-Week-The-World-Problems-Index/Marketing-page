@@ -132,20 +132,28 @@ table {
   justify-content: space-between;
   margin-top: 1vh;
 }
+.navigation div {
+  padding-top: 1vh;
+}
 @media (max-width:800px) {
   .navigation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding-bottom: 6vh;
   }
 }
-@media (max-width:800px) {
-  .navigation div {
-    padding-bottom: 1.2vh;
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding-bottom: 8vh;
   }
 }
-.navigation .logo {
+.logo {
   padding: 10px;
   margin-right: 20%;
   margin-top: 5px;
@@ -153,31 +161,22 @@ table {
   font-family: "Point One", orienta;
 }
 @media (max-width:800px) {
-  .navigation .logo {
-    margin: 0 auto;
+  .logo {
+    margin: auto 0;
     padding: 10px;
   }
 }
-.navigation a {
+a {
   text-decoration: none;
   color: #585858;
   font-size: 2rem;
   margin-right: 1vw;
+  padding-top: 0vh;
 }
-@media (max-width:800px) {
-  .navigation a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding-bottom: 0.5vh;
-  }
-}
-.navigation a:hover {
+a:hover {
   text-decoration: underline;
 }
-.navigation a:active {
+a:active {
   color: red;
 }
 * {
@@ -188,13 +187,14 @@ html {
   font-family: 'Orienta', sans-serif;
 }
 button {
+  display: flex;
   border-radius: 20px;
   font-size: 17px;
   padding: 5px 70px;
   text-decoration: none;
   background-color: #585858;
   color: #F8F8F8;
-  margin-left: 20px;
+  margin: 20px auto;
 }
 button:hover {
   background-color: #dfdbdb;
