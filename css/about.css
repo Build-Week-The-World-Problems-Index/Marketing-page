@@ -476,7 +476,7 @@ a {
   color: #585858;
   font-size: 2rem;
   margin-right: 1vw;
-
+  padding-top: 0vh;
 }
 a:hover {
   text-decoration: underline;
@@ -500,6 +500,7 @@ button {
   color: #F8F8F8;
   margin-left: 20px;
   border: none;
+  cursor: pointer;
 }
 button:hover {
   background-color: #dfdbdb;
