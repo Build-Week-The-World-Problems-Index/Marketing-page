@@ -171,7 +171,9 @@ a {
   color: #585858;
   font-size: 2rem;
   margin-right: 1vw;
-  padding-top: 0vh;
+
+  padding-top: 4vh;
+
 }
 a:hover {
   text-decoration: underline;
@@ -266,6 +268,16 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:800px) {
+  #formcontent form {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  #formcontent form {
+    width: 80%;
+  }
 }
 #formcontent form .container {
   display: flex;

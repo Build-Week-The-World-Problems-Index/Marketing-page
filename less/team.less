@@ -8,16 +8,13 @@ header {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 10vh;
-  max-height: 65vh;
+  height: 15vh;
+  margin-bottom: 5vh;
   .column();
   justify-content: space-between;
 
-
   h1 {
-
     color: @font-color;
-
   }
 }
 
@@ -35,7 +32,6 @@ header {
   }
 
   @media @phone {
-
     .column();
   }
 }
@@ -54,7 +50,6 @@ header {
     margin: 0;
     padding: 0;
   }
-
 }
 
 .flip-card-inner {
@@ -71,8 +66,8 @@ header {
   transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
+
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -96,12 +91,9 @@ header {
 }
 
 
-
 footer p {
-
   text-align: center;
   background: @bgcolor;
   height: 8vh;
   padding: 25px;
-
 }
