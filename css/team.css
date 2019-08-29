@@ -501,7 +501,6 @@ button {
   margin-left: 20px;
   border: none;
 }
-
 button:hover {
   background-color: #dfdbdb;
   color: #585858;
@@ -547,7 +546,6 @@ footer p {
 #contactbtn {
   margin: 0;
   margin-top: 30px;
-  cursor: pointer;
 }
 #formcontent {
   display: none;
@@ -725,4 +723,9 @@ footer p {
   background: #E5E5E5;
   height: 8vh;
   padding: 25px;
+}
+i {
+  position: absolute;
+  opacity: 0.12;
+  font-size: 300px;
 }
